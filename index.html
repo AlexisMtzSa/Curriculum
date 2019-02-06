@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EmpreX-Tec</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+
+	<script language="javascript">
+		function obteniendodatos()
+		 {
+          
+         /* document.write( document.getElementById('nombre').value); 
+ 
+          document.write( document.getElementById('apellidos').value); 
+
+         console.log(document.getElementById('nombre').value);
+
+
+           alert(document.getElementById('nombre').value + document.getElementById('nombre').value);
+          /* alert(document.getElementById('apellidos').value);
+            
+
+           var nombre = document.getElementById('nombre').value;
+            var apellidos = document.getElementById('apellidos').value;     */
+               
+             var l1 = "",l2= "",l3= "",l4= "",l5= "",l6= "",l7 = "",l8 = ""; 
+
+               if ( document.getElementById("idioma1").checked == true){
+                  l1 = (" "+document.getElementById('idioma1').value); 
+               }
+               if ( document.getElementById("idioma2").checked == true){
+                  l2 = " "+document.getElementById('idioma2').value; 
+               }
+               if ( document.getElementById("idioma3").checked == true){
+                  l3 = " "+document.getElementById('idioma3').value; 
+               }
+
+			 if ( document.getElementById("idioma4").checked == true){
+                 l4 = " "+document.getElementById('idioma4').value; 
+                 }
+
+                if ( document.getElementById("idioma5").checked == true){
+                  l5 = " "+document.getElementById('idioma5').value; 
+               }
+                 if ( document.getElementById("idioma6").checked == true){
+                  l6 =" "+ document.getElementById('idioma6').value; 
+               }
+                 if ( document.getElementById("idioma7").checked == true){
+                  l7 =" "+ document.getElementById('idioma7').value; 
+               }
+                 if ( document.getElementById("idioma8").checked == true){
+                  l8 = " "+ document.getElementById('des8').value; 
+
+               }
+
+
+            alert("Tu Curriculum Vitae se mostrara en el documento de la siguente manera:\n***Datos Personales***\nNombre: "+document.getElementById('nombre').value+"\nApellidos: "+document.getElementById('apellidos').value+"\nClave: "+document.getElementById("clave").value+"\nCivil: "+document.getElementById("civil").value+"\nLugar de nacimiento: "+document.getElementById("lugar").value+"\nFecha de nacimiento: "+document.getElementById("fecha").value+"\nDirección: "+document.getElementById("direccion").value+"\nTelefono: "+document.getElementById("telefono").value+"\nCorreo: "+document.getElementById("correo").value +"\n***Formación académica***" +"\nPrimaria:  "+document.getElementById("primaria").value +"  Inicio: "+document.getElementById("iprimaria").value +"  Finalizo: "+document.getElementById("iprimaria").value+"\nSecundaria:  "+document.getElementById("secundaria").value +"  Inicio: "+document.getElementById("isecundaria").value +"  Finalizo: "+document.getElementById("fsecundaria").value+"\nMedia:  "+document.getElementById("media").value +"  Inicio:  "+document.getElementById("imedia").value +" Finalizo:  "+document.getElementById("fmedia").value+"\nSuperior:  "+document.getElementById("superior").value +"  Inicio:  "+document.getElementById("isuperior").value +" Finalizo: "+document.getElementById("fsuperior").value + "\nIdiomas: "+ l1 + l2 + l3 + l4+ l5+ l6+ l7+" "+ l8 +"\nCursos: "+document.getElementById('cursos').value+"\n***Vida Profesional***\nExperiencia laboral: "+document.getElementById('exp').value+"\nReferencias: "+document.getElementById("referencias").value+"\n ***Acerca de ti*** \n Aptitudes: "+document.getElementById('aptitudes').value+"\nIntereses: "+document.getElementById("intereses").value);
+
+                      
+
+            	
+ 
+
+		}
+	</script> 
+
+
+
+
+
+
+
+<script language="javascript">
+		function enviandoformu()
+		 {
+
+               alert("Tu Curriculum Vitae se ha enviado");
+		 }
+	</script> 
+
+
+</head>
+<body>
+
+
+	<header>
+		<img src="./img/logo.png" id="logo">
+       <h1 id="Empresario">Empre<i>X-</i>Tec</h1>
+      
+
+      <p id = "somos">  Somos una empresa Universitaria dedicada a la integración tecnológica, desarrollando las mejores soluciones en tecnología para la seguridad y la comunicacion. </p>
+      <p id="contamos">¡Contamos con profesionales ampliamente capacitados y certificados para brindar las mejores soluciones de acuerdo a sus necesidades..! </p>
+              <p><cite>“Tú no eres tu currículum, eres tu trabajo”</cite>-Seth Godin. Empresario y especialista en marketing</p>
+	</header>
+
+	<form name="formu" id= "formu">
+		<fieldset id="fielddatos">
+			<legend  id = "datosp">Datos personales</legend>
+			<p><label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" ="Juan" required></p>
+			<p><label for="apellidos">Apellidos: </label><input type="text" name="apellidos" id="apellidos" placeholder="Perez Sanchez" required></p>
+			<p><label for="clave">Clave de elector: </label><input type="text" name="clave" id="clave" placeholder="XXXXXXXXXXXXXXXXXX" required></p>
+			<p><label for="civil">Estado civil: </label><select  type="select" name="civil" id="civil" >
+					<option value="soltero">Soltero(a)</option>
+					<option value="casado">Casado(a)</option>
+					<option value="libre">Unión Libre</option>
+					<option value="divorciado">Divorciado(a)</option>
+					<option value="viudo">Viudo(a)</option>
+				</select>
+			</p>
+			<p><label for="lugar">Lugar de nacimiento: </label><input type="text" name="lugar" id= "lugar" required></p>
+			<p><label for="fecha">Fecha de nacimiento: </label><input type="date" name="fecha" id= "fecha" required></p>
+			<p><label for="direccion">Dirección: </label><input type="text" name="direccion" id= "direccion" required></p>
+			<p><label for="telefono">Telefono: </label><input type="text" name="telefono" id = "telefono" required></p>
+			<p><label for="correo">E-mail: </label><input type="email" name="correo"  id = "correo" required></p>
+		</fieldset>
+
+		<fieldset id="fieldform">
+			<legend>Formación académica</legend>
+			<table cellpadding="2" border="1" id="table1">
+				<tr>
+					<td>
+						<label>Nivel educativo</label>
+					</td>
+					<td>
+						<label>Institución</label>
+					</td>
+					<td>
+						<label>Año inicio </label>
+					</td>
+					<td>
+						<label>Año fin </label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="primaria">Primaria</label>
+					</td>
+					<td>
+						<input type="text" name="primaria" id="primaria">
+					</td>
+					<td>
+						<input type="number" name="iprimaria" id="iprimaria">
+					</td>
+					<td>
+						<input type="number" name="fprimaria" id="fprimaria">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Secundaria</label>
+					</td>
+					<td>
+						<input type="text" name="secundaria" id="secundaria">
+					</td>
+					<td>
+						<input type="number" name="isecundaria" id="isecundaria">				
+					</td>
+					<td>
+						<input type="number" name="fsecundaria" id="fsecundaria">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Media Superior</label>
+					</td>
+					<td>
+						<input type="text" name="media" id="media">
+					</td>
+					<td>
+						<input type="number" name="imedia" id="imedia">
+					</td>
+					<td>
+						<input type="number" name="fmedia" id="fmedia">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Superior</label>
+					</td>
+					<td>
+						<input type="text" name="superior" id="superior">
+					</td>
+					<td>
+						<input type="number" name="isuperior" id="isuperior">
+					</td>
+					<td>
+						<input type="number" name="fsuperior" id="fsuperior">
+					</td>
+				</tr>
+			</table>
+
+		
+
+			<label for="otros"><b>Cursos y seminarios</b></label>
+			<br><textarea name="cursos" cols="50" rows="15" id="cursos"></textarea>
+		
+				<label><b>Idiomas</b></label><br>
+				<table>
+					<tr>
+						<td>
+							<input type="checkbox" name="idioma1" id="idioma1" value="ingles">Inglés
+						</td>
+						<td>
+							<input type="checkbox" name="idioma2" id="idioma2" value="frances">Francés
+						</td>
+						<td>
+							<input type="checkbox" name="idioma3" id="idioma3" value="italiano">Italiano
+						</td>
+						<td>
+							<input type="checkbox" name="idioma4" id="idioma4" value="aleman">Alemán
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" name="idioma5" id="idioma5" value="mandarin">Mandarín
+						</td>
+						<td>
+							<input type="checkbox" name="idioma6" id="idioma6" value="japones">Japonés
+						</td>
+						<td>
+							<input type="checkbox" name="idioma7" id="idioma7" value="portugues">Portugués
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<input type="checkbox" name="idioma8" id="idioma8" value="otros">Otros
+							<input type="text" name="idioma9" id="idioma9">
+						</td>
+					</tr>
+				</table>
+
+		</fieldset>
+
+		</fieldset>
+			<fieldset class="ult" id="f1">
+				<legend>Vida profesional</legend>	        
+				<label for="exp"><b>Experiencia laboral</b></label><br>
+				<textarea name="exp" cols="50" rows="15" id="exp"></textarea>
+				<label for="referencias"><b>Referencias</b></label><br>
+				<textarea name="referencias" cols="50" rows="15" id="referencias"></textarea>
+			</fieldset>
+			
+			<fieldset class="ult" id="f2">
+				<legend>Acerca de ti...</legend>
+				<label for="aptitudes"><b>Aptitudes<b></label><br>
+				<textarea name="aptitudes" cols="50" rows="15" id="aptitudes"></textarea>
+				<label for="intereses"><b>Intereses<b></label><br>
+				<textarea name="intereses" cols="50" rows="15" id="intereses"></textarea>
+			</fieldset>
+
+		<div id="botones">
+			<input type="submit" name="enviar" id = "enviar" onclick="enviandoformu()" value=""><br>
+			<input type="reset" name="limpiar" id = "reset" value=""><br>
+			<input type="submit" name="mostrar"  id = "mostrar" onclick= "obteniendodatos()" value=""><br>
+		</div>
+		
+    </form>
+      
+
+
+  
+
+  
+</body>
+</html>

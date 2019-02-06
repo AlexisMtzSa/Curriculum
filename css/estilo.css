@@ -1,0 +1,104 @@
+#somos {
+	text-align: center;
+	font-family: Snell Roundhand, cursive;
+}
+
+
+#contamos {
+	text-align: center;
+	font-family: Courier, monospace ;
+}
+
+
+#Empresario {
+	text-align: left;
+	font-family: Apple Chancery, cursive;
+	}
+#curri{
+     text-align: left;
+	font-family:Trebuchet MS, sans-serif;
+
+}
+#formu{
+	font-family: Courier, monospace ;
+	
+}
+
+header {
+	background-color: lightblue;
+	text-indent: 50px;
+	width: 100%;
+
+}
+
+body{
+	background: url(../img/papel.jpe)
+}
+
+fieldset {
+	border-style: none;
+	background-color: lightgray; 
+	margin: 5px;
+	border: solid;
+}
+
+#fielddatos{
+	float: left;
+	width: 30%;
+}
+
+#fieldform{
+	width: 60%;
+	 
+}
+
+.ult {
+	width: 30%;
+}
+
+#cursos{
+	float: left;
+}
+
+legend {
+
+	background-color: lightblue;
+}
+
+#table1{
+	margin-bottom: 5px;
+}
+
+#f1{
+	float: left;
+}
+
+
+#f2{
+	float: left;
+}
+
+#logo{
+	float: left;
+}
+
+#enviar{
+	background: url(../img/enviar.png);
+	width: 199px;
+	height: 59px;
+	margin: 5px;
+}
+
+#mostrar{
+	background: url(../img/curriculum.png);
+	width: 100px;
+	height: 84px;
+	margin: 5px;
+}
+
+#reset{
+	background: url(../img/limpiar.png);
+	width: 96px;
+	height: 96px;
+	margin: 5px;
+}
